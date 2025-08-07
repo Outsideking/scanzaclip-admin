@@ -1,10 +1,10 @@
-import * as admin from 'firebase-admin';
-import serviceAccount from './serviceAccountKey.json'; // ✅ ใช้ import JSON
+import admin from 'firebase-admin';
+import serviceAccount from '../serviceAccountKey.json';
 
 if (!admin.apps.length) {
   admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount as admin.ServiceAccount)
+    credential: admin.credential.cert(serviceAccount)
   });
 }
 
-export default admin.firestore();
+export default admin;

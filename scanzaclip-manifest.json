@@ -1,35 +1,24 @@
 {
-  "projectName": "Scanzaclip",
-  "owner": {
-    "name": "Thanva Phupingbut",
-    "address": "244 หมู่ที่ 3 ต.บ้านเป้า อ.เมือง จ.ลำปาง 52100",
-    "phone": "+66823727103",
-    "email": ""
-  },
-  "firebase": {
-    "projectId": "scan-click-e0936",
-    "projectNumber": "680228180248",
-    "serviceAccountFile": "scanzaclip.json"
-  },
-  "vercel": {
-    "project": "scanzaclip-admin",
-    "envVars": [
-      "FIREBASE_SERVICE_ACCOUNT",
-      "FIREBASE_PROJECT_ID",
-      "FIREBASE_CLIENT_EMAIL",
-      "FIREBASE_PRIVATE_KEY",
-      "VERCEL_TOKEN"
-    ]
-  },
-  "playStore": {
-    "appId": "com.scanzaclip.app",
-    "publisher": "Thanva Phupingbut"
-  },
-  "marketplace": {
-    "commissionPercent": 40,
-    "sellerSharePercent": 60,
-    "downloadExpiryDays_default": 30,
-    "downloadExpiryDays_platformSale": 365
-  },
-  "notes": "Keep service account JSON in secure vault. Backups: GitHub private repo + Google Drive encrypted + Password Manager entry."
+  "project": "scanzaclip",
+  "version": "1.0.0",
+  "author": "Thanva Phupingbut",
+  "description": "Scanzaclip app project manifest file",
+  "created_at": "2025-08-10T12:00:00Z",
+  "modules": [
+    {
+      "name": "AndroidApp",
+      "status": "pending",
+      "description": "Android native app module (A1)"
+    },
+    {
+      "name": "BackendAPI",
+      "status": "pending",
+      "description": "Backend API module (B1)"
+    },
+    {
+      "name": "AdminDashboard",
+      "status": "pending",
+      "description": "Admin dashboard for app management"
+    }
+  ]
 }

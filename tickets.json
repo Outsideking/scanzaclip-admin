@@ -1,0 +1,22 @@
+[
+  {
+    "title": "scanzaclip-001 - Deploy checklist: Vercel env & build",
+    "body": "Checklist:\n- [ ] FIREBASE_SERVICE_ACCOUNT set in Vercel\n- [ ] FIREBASE_PROJECT_ID set\n- [ ] FIREBASE_CLIENT_EMAIL set\n- [ ] FIREBASE_PRIVATE_KEY set (\\n escaped)\n- [ ] npm run build locally success\n- Notes: "
+  },
+  {
+    "title": "scanzaclip-002 - Firebase: Service account & Firestore rules",
+    "body": "Tasks:\n- [ ] Upload service account to secure vault\n- [ ] Add Firestore rules\n- [ ] Test read/write with admin\n- Notes: "
+  },
+  {
+    "title": "scanzaclip-003 - Android: Build AAB & Play Console setup",
+    "body": "Tasks:\n- [ ] Generate release keystore\n- [ ] Prepare screenshots, icon, privacy policy\n- [ ] Upload to Play Console internal test\n- Notes: "
+  },
+  {
+    "title": "scanzaclip-004 - Marketplace & Wallet integration",
+    "body": "Tasks:\n- [ ] Implement wallet top-up webhook\n- [ ] Implement purchase flow & commission\n- [ ] Payout process for sellers\n- Notes: "
+  },
+  {
+    "title": "scanzaclip-005 - Security & Backup",
+    "body": "Tasks:\n- [ ] Set GitHub Secrets\n- [ ] Back up service account to encrypted storage\n- [ ] Configure Crashlytics & monitoring\n- Notes: "
+  }
+]

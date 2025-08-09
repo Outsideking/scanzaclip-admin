@@ -1,0 +1,5 @@
+(เช่น 1Password, Thanva Phupingbut) — เพิ่ม note ว่าไฟล์คือ scanzaclip-manifest.json และใส่ชื่อคนติดต่อ
+
+เก็บสำเนา encrypted ใน Google Drive / Backblaze / External HDD ที่ล็อกไว้
+
+สร้าง Recovery Key (เช่น 24-word passphrase หรือไฟล์ PGP-encrypted) — เก็บในสองที่แยกกัน (offline + password manager)

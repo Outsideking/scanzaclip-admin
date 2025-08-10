@@ -16,7 +16,7 @@ export default async function handler(req, res) {
       title,
       content,
       language,
-      keywords: keywords || [],
+      keywords: keywords?.map(k => k.toLowerCase()) || [],
       categoryId: categoryId || null,
       createdAt: new Date(),
       updatedAt: new Date(),

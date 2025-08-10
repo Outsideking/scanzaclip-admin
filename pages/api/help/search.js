@@ -1,21 +1,28 @@
 import { db } from "../../../firebaseAdmin";
 
 export default async function handler(req, res) {
-  const { query } = req.query;
-
-  if (!query) {
-    return res.status(400).json({ error: "Missing search query" });
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
   }
 
   try {
-    const snapshot = await db
-      .collection("helpArticles")
-      .where("keywords", "array-contains", query.toLowerCase())
-      .get();
+    const { title, content, language, keywords, categoryId } = req.body;
 
-    const results = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+    if (!title || !content || !language) {
+      return res.status(400).json({ error: "Missing required fields" });
+    }
 
-    res.status(200).json({ success: true, results });
+    const docRef = await db.collection("helpArticles").add({
+      title,
+      content,
+      language,
+      keywords: keywords?.map(k => k.toLowerCase()) || [],
+      categoryId: categoryId || null,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    });
+
+    res.status(200).json({ success: true, id: docRef.id });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
   }

@@ -13,7 +13,7 @@
 - ระบบรายงานและสถิติการใช้งาน
 
 ## ผู้พัฒนา
-- นายธันวา ภูปิงบุตร  
+- นายธันวา ภูปิงบุตร  244 (เหน่ง)
 - GitHub: [Outsideking](https://github.com/Outsideking)
 
 ## License
